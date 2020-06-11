@@ -26,9 +26,10 @@ knitr::opts_chunk$set(echo = TRUE)
 options(warn = -1)
 # 清空工作环境 Clean enviroment object
 rm(list=ls()) 
+```
 
-
-# 1.2 解析命令行
+# 1. 解析命令行
+```{r}
 # 设置清华源加速下载
 site="https://mirrors.tuna.tsinghua.edu.cn/CRAN"
 # 判断命令行解析是否安装，安装并加载
