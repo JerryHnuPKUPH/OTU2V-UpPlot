@@ -34,7 +34,7 @@ rm(list=ls())
 site="https://mirrors.tuna.tsinghua.edu.cn/CRAN"
 # 判断命令行解析是否安装，安装并加载
 if (!suppressWarnings(suppressMessages(require("optparse", character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)))) {
-  install.packages(p, repos=site)
+  install.packages("optparse", repos=site)
   require("optparse",character.only=T) 
 }
 # 解析命令行
